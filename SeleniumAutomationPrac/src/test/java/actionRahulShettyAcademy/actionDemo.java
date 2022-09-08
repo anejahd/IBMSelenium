@@ -18,11 +18,12 @@ public class actionDemo {
 		
 		driver.get("https://www.amazon.com/");
 		
-		
+		Actions a = new Actions(driver);
+
 		WebElement move = driver.findElement(By.id("nav-link-accountList"));
 		
 		//Get Action and move to specific item
-		Actions a = new Actions(driver);
+		
 		a.moveToElement(driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("hello").doubleClick().perform();
 		a.moveToElement(move).contextClick().build().perform();
 		//Drag and drop

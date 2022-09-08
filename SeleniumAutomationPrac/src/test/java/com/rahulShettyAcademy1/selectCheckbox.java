@@ -29,13 +29,7 @@ public class selectCheckbox {
 		//count the number of checkbox
 		List <WebElement> checkboxes = driver.findElements(By.cssSelector("input[type='checkbox']"));
 	    System.out.println("Number of elements:" + checkboxes.size());
-	    
-	    
-		
-		
-	   /*for(int i = 0; i < elements.size(); i++) {
-	    	System.out.println("Radio button text:" + elements.get(i).getAttribute("value"));
-	    }*/	    
+	      
 		
 		option1.click();
 		System.out.println("Unchecked " + optionName.getText());

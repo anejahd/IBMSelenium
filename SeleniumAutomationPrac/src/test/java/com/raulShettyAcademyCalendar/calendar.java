@@ -20,7 +20,6 @@ public class calendar {
 		driver.get("https://www.path2usa.com/travel-companions");
 		//open calendar
 		driver.findElement(By.cssSelector("#travel_date")).click();
-		
 		//month element
 		driver.findElement(By.cssSelector("table[class=' table-condensed'] th[class='datepicker-switch']")).getText().contains("November");
 		
