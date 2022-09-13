@@ -1,17 +1,22 @@
 package com.Windows;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.apache.commons.io.FileUtils;
+
 
 public class windowScreenshot {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		
 		System.setProperty("webdriver.chrome.driver", "/Users/ANEJAHDANIELS/ChromeDriver/chromedriver.exe");
@@ -33,7 +38,10 @@ public class windowScreenshot {
         WebElement name = driver.findElement(By.cssSelector("[name='name']"));
         name.sendKeys(courseName);
         
-
+        //Capture webelement screenshot using Selenium
+        File file = name.getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(file, new File("/Users/ANEJAHDANIELS/screenshot/logo.png"));
+        
         driver.quit();
         System.out.println(courseName);
 	}
