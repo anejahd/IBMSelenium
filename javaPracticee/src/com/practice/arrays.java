@@ -4,7 +4,7 @@ public class arrays {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		/*String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+		String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
 		for (String i : cars) {
 		  System.out.println(i);
 		}
@@ -26,7 +26,7 @@ public class arrays {
 		String[] mycarss = {"Volvo", "BMW", "Ford", "Mazda"};
 		for (int i = 0; i < mycarss.length; i++) {
 		  System.out.println(mycarss[i]);
-		}*/
+		}
 		
 		//two-dimensional array
 		int[][] myNumbers = {{1,2,3,4}, {5,6,7}};
