@@ -10,7 +10,7 @@ public class forLoop {
 		}*/
 		
 		//displays each even numbers
-		for(int y =0; y < 10; y = y +2) {
+		/*for(int y =0; y < 10; y = y +2) {
 			System.out.println(y);
 		}
 		
@@ -31,7 +31,24 @@ public class forLoop {
 			  }
 			  System.out.println(i);
 			}
-		// continue statement breaks one iteration in the loop. skips vale 4
+		// continue statement breaks one iteration in the loop. skips vale 4*/
+		
+		//Modulus
+		//even number
+		int a;
+		int num = 20;
+		for(a = 1; a <= num; a++) {
+			if(a % 2 == 0) {
+				System.out.println(a);
+			}
+		}
+		
+		//odd numbers
+		for(a=1; a < num; a++) {
+			if(a %2 == 1) {
+				System.out.println(a);
+			}
+		}
 		
 		
 
